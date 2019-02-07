@@ -1,0 +1,55 @@
+#!/bin/python3
+
+''' PYHTON--PROJECT
+    MODERN-ART   
+    BY:
+    AAYUSHREE SAPKOTA 712'''
+from turtle import *
+from random import *
+
+def randomColor():
+  red=randint(0,255)
+  blue=randint(0,255)
+  green=randint(0,255)
+  color(red,blue,green)
+
+def randomPlace():
+  penup()
+  x=randint(-100,100)
+  y=randint(-100,100)
+  goto(x,y)
+  pendown()
+  
+def heading():
+  number=randint(1,360)
+  setheading(number)
+  
+def drawRectangle():
+  randomColor()
+  randomPlace()
+  hideturtle()
+  length=randint(10,100)
+  height=randint(10,100)
+  begin_fill()
+  forward(length)
+  right(90)
+  forward(height)
+  right
+  forward(length)
+  right(90)
+  forward(height)
+  right(90)
+  end_fill()
+
+shape("turtle")
+for i in range(3):
+ randomColor()
+ randomPlace()
+ heading()
+ stamp()
+  
+clear()
+setheading(0)
+
+for i in range(20): 
+  drawRectangle()
